@@ -1,29 +1,69 @@
 ---
-# Default home page with boxes providing collection stats
+# Home page for the Milton digital exhibit
 layout: page
 ---
+
 <div class="row">
 
-  <div class="col-md-8">
+  <div class="col-lg-8">
 
     {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" height="300" %}
-  
+
+    <hr class="milton-divider">
+
+    <blockquote class="milton-quote">
+      “Of Man's first disobedience, and the fruit<br>
+      Of that forbidden tree…”
+      <footer><em>John Milton, Paradise Lost</em></footer>
+    </blockquote>
+
+    {% include index/carousel.html title="Featured Illustrations" height="450" %}
+
+    <div class="card mt-4 shadow-sm">
+      <div class="card-body">
+
+        <h2>The Story of <em>Paradise Lost</em></h2>
+
+        <p>
+          This exhibit presents ten engraved illustrations from the
+          1794–1796 Parsons edition of John Milton's
+          <em>Paradise Lost</em>.
+          Together these images trace the poem's movement from heavenly
+          rebellion through innocence in Eden, temptation, the Fall,
+          and humanity's expulsion from Paradise.
+        </p>
+
+        <p>
+          The collection demonstrates how eighteenth-century artists
+          transformed Milton's epic into visual form while also
+          illustrating how descriptive metadata can support digital
+          humanities research.
+        </p>
+
+      </div>
+    </div>
+
   </div>
- <div class="card mt-4">
 
-<div class="card-body">
+  <div class="col-lg-4">
 
-<h3>The Story of Paradise Lost</h3>
+    {% include index/objects.html %}
 
-<p>
-Beginning with Satan's rebellion in Heaven and concluding with the expulsion of Adam and Eve from Eden, these engravings visualize the central narrative of Milton's epic. Together they demonstrate how eighteenth-century artists interpreted themes of free will, temptation, innocence, redemption, and divine justice.
-</p>
+    {% include index/featured-terms.html
+        field="subjectcontents"
+        title="Major Themes"
+        max=10 %}
 
-<p>
-Browse the collection to discover how individual illustrations connect to specific books of <em>Paradise Lost</em>, their engravers and illustrators, and the wider intellectual culture of late eighteenth-century Britain.
-</p>
+    {% include index/featured-terms.html
+        field="illustrator"
+        title="Illustrators"
+        max=5 %}
 
-</div>
+    {% include index/featured-terms.html
+        field="engraver"
+        title="Engravers"
+        max=5 %}
+
+  </div>
 
 </div>
