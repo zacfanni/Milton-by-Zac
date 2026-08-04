@@ -9,3 +9,69 @@ font-family: Georgia, "Times New Roman", serif;
 line-height: 1.75;
 
 }
+.navbar {
+
+background-color: #3B2F2A !important;
+
+border-bottom: 3px solid #B89B5E;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+font-family: Garamond, Georgia, serif;
+
+font-weight: 600;
+
+letter-spacing: .03em;
+
+color: #2C221D;
+
+}
+a {
+
+color: #6B1F1F;
+
+}
+
+a:hover {
+
+color: #A67C2D;
+
+text-decoration: none;
+
+}
+.card {
+
+background: #FCFAF5;
+
+border: 1px solid #B89B5E;
+
+box-shadow: 2px 3px 10px rgba(0,0,0,.08);
+
+}
+.card img {
+
+border: 5px solid white;
+
+box-shadow: 0 2px 8px rgba(0,0,0,.15);
+
+}
+.btn-primary {
+
+background: #6B1F1F;
+
+border-color: #6B1F1F;
+
+}
+
+.btn-primary:hover {
+
+background: #A67C2D;
+
+border-color: #A67C2D;
+
+}
