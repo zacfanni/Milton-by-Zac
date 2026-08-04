@@ -1,15 +1,33 @@
-field,display_name,browse_link,external_link
+field,display_name,browse_link
+
 title,Title,
-creator,Creator,
-date,Date Created,
+
 description,Description,
-subject,Subjects,true
-location,Location
-latitude,Latitude
-longitude,Longitude
-source,Source
-identifier,Source Identifier,,
-type,Type,
-format,Format,
-rights,Rights,
-rightsstatement,Rights Statement,,true
+
+subjectcontents,Characters,true
+
+subjectbibliographic,Edition,
+
+illustrator,Illustrator,true
+
+engraver,Engraver,true
+
+painter,Painter,true
+
+publisher,Publisher,
+
+date,Publication Date,
+
+location,Publication Place,true
+
+streetaddress,Publisher Address,
+
+identifier,Identifier,
+
+platenumber,Plate Number,
+
+extent,Physical Description,
+
+rightsstatement,Rights,
+
+imagealttext,Alternative Text,
