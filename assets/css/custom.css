@@ -1,77 +1,292 @@
+/* ===========================================================
+   CUSTOM CSS
+   Milton Digital Exhibit
+   CollectionBuilder
+=========================================================== */
+
+
+/* ---------- GENERAL PAGE ---------- */
+
 body {
-
-background-color: #F6F1E6;
-
-color: #463A32;
-
-font-family: Georgia, "Times New Roman", serif;
-
-line-height: 1.75;
-
+    background-color: #F6F1E6;
+    color: #463A32;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
 }
+
+
+/* ---------- CONTAINER ---------- */
+
+.container {
+    max-width: 1200px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
 .navbar {
-
-background-color: #3B2F2A !important;
-
-border-bottom: 3px solid #B89B5E;
-
+    background-color: #3B2F2A !important;
+    border-bottom: 3px solid #B89B5E;
 }
+
+.navbar-brand,
+.nav-link {
+    color: #F6F1E6 !important;
+}
+
+.nav-link:hover {
+    color: #D9C38A !important;
+}
+
+
+/* ---------- HEADINGS ---------- */
+
 h1,
 h2,
 h3,
 h4,
-h5 {
-
-font-family: Garamond, Georgia, serif;
-
-font-weight: 600;
-
-letter-spacing: .03em;
-
-color: #2C221D;
-
+h5,
+h6 {
+    font-family: Garamond, Georgia, serif;
+    color: #2C221D;
+    letter-spacing: .03em;
 }
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 1.5rem;
+}
+
+
+/* ---------- LINKS ---------- */
+
 a {
-
-color: #6B1F1F;
-
+    color: #6B1F1F;
+    text-decoration: none;
 }
 
 a:hover {
-
-color: #A67C2D;
-
-text-decoration: none;
-
+    color: #A67C2D;
+    text-decoration: underline;
 }
+
+
+/* ---------- CARDS ---------- */
+
 .card {
-
-background: #FCFAF5;
-
-border: 1px solid #B89B5E;
-
-box-shadow: 2px 3px 10px rgba(0,0,0,.08);
-
+    background-color: #FCFAF5;
+    border: 1px solid #B89B5E;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    margin-bottom: 2rem;
 }
+
+.card-header {
+    background-color: #E8DDC4;
+    font-weight: bold;
+}
+
+
+/* ---------- IMAGES ---------- */
+
+img {
+    max-width: 100%;
+}
+
 .card img {
 
-border: 5px solid white;
+    border: 6px solid white;
 
-box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    box-shadow: 0 3px 8px rgba(0,0,0,.18);
 
 }
+
+
+/* ---------- TABLES ---------- */
+
+table {
+    background: #FCFAF5;
+}
+
+th {
+    background: #E8DDC4;
+}
+
+td,
+th {
+    padding: .65rem;
+}
+
+
+/* ---------- BLOCKQUOTE ---------- */
+
+.milton-quote {
+
+    font-style: italic;
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 2rem auto;
+
+    color: #5A4A3F;
+
+    font-size: 1.15rem;
+
+}
+
+.milton-quote footer {
+
+    margin-top: .75rem;
+
+    font-size: .95rem;
+
+}
+
+
+/* ---------- DECORATIVE DIVIDER ---------- */
+
+.milton-divider {
+
+    width: 45%;
+
+    margin: 2rem auto;
+
+    border-top: 2px solid #B89B5E;
+
+}
+
+
+/* ---------- BUTTONS ---------- */
+
 .btn-primary {
 
-background: #6B1F1F;
+    background-color: #6B1F1F;
 
-border-color: #6B1F1F;
+    border-color: #6B1F1F;
 
 }
 
 .btn-primary:hover {
 
-background: #A67C2D;
+    background-color: #A67C2D;
 
-border-color: #A67C2D;
+    border-color: #A67C2D;
+
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+
+    margin-top: 4rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid #B89B5E;
+
+    color: #5A4A3F;
+
+}
+
+
+/* ---------- SEARCH BAR ---------- */
+
+.form-control {
+
+    border: 1px solid #B89B5E;
+
+}
+
+.form-control:focus {
+
+    border-color: #A67C2D;
+
+    box-shadow: 0 0 0 .2rem rgba(166,124,45,.2);
+
+}
+
+
+/* ---------- BADGES ---------- */
+
+.badge {
+
+    background-color: #B89B5E;
+
+    color: white;
+
+}
+
+
+/* ---------- CAROUSEL ---------- */
+
+.carousel {
+
+    margin-top: 2rem;
+
+    margin-bottom: 2rem;
+
+}
+
+.carousel img {
+
+    border: 8px solid white;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,.2);
+
+}
+
+
+/* ---------- ITEM METADATA ---------- */
+
+dl dt {
+
+    color: #2C221D;
+
+    font-weight: bold;
+
+}
+
+dl dd {
+
+    margin-bottom: 1rem;
+
+}
+
+
+/* ---------- PAGE SPACING ---------- */
+
+main {
+
+    padding-top: 2rem;
+
+    padding-bottom: 3rem;
+
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+
+    h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .milton-quote {
+
+        font-size: 1rem;
+
+    }
 
 }
